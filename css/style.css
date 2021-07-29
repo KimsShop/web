@@ -3,7 +3,7 @@
 
 /* 레이아웃 */
 #wrap {width: 100%;}
-#header {width: 100%; height: 200px; background: url(../img/header_bg.jpg) no-repeat center/cover;}
+#header {width: 100%; height: 300px; background: url(../img/header_bg.jpg) no-repeat center/cover;}
 #contents {width: 100%; height: 800px; background: #222;}
 #footer {width: 100%; height: 200px; background: #333;}
 
@@ -14,7 +14,7 @@
 #cont_cont {width: 100%; height: 200px; background: #666;}
 
 /* 컨테이너 */
-.homeheader{width: 900px; height: 1000px; background: url(../img/배경.png) no-repeat center/cover;margin: -100px auto;text-align: center;}
+.homeheader{width: 100%; height: 1500px; background: url(../img/배경.png) no-repeat center/cover;margin: -100px auto;text-align: center;}
 .homeheader li{list-style:none;background: #333;font-size: 50px;opacity: 0.8; margin: 100px 0px 100px 0px;}
 .homeheader a{color: white; }
 .homeheader a:hover {color:blue}
@@ -22,7 +22,38 @@
  .container {padding: 50px 0px;color:white; font-size:30px; width: 528px; height: 50px; border: 1px solid rgb(90, 86, 86);text-align: center;background: rgb(78, 181, 221);} */
  .container a{display: inline-block;}
  .bigo { width: 900px; margin: 0 auto; height: inherit; border: 1px solid rgb(90, 86, 86);text-align: center;background: rgb(105, 103, 103);color: rgb(255, 255, 255);font-size: 25;}
+ 
+ /* 케릭정보 */
+ .char { width: 900px; margin: 0 auto; height: 150px; border: 1px solid rgb(90, 86, 86);text-align: center;background: rgb(105, 103, 103);color: rgb(255, 255, 255);font-size: 25;}
+ .char li {list-style:none; }
+ .char img {height: 150px;float: left;}
+
+
+
+ 
+ .rank{width: 900px; height: 60px; background: black; margin-top: 5px;}
+ .rank img{width: 45px; height: 60px;}
+ .rank span {width: 160px; height: 60px; float: left; background: url(../char/Garen/rank.PNG);  margin-left: 10px; text-align: left;}
+
+ .rank span.r1 {background-position: 0x 0px;}
+ .rank span.r2 {background-position: 0px -140px;}
+ .rank span.r3 {background-position: 0px -280px;}
+ .rank span.r4 {background-position: 0px -420px;}
+ .rank span.r5 {background-position: 0px -570px;}
+
+
+
+ .rmenu {width: 700px; height: 40px; background: blue; margin-left: 200px;text-align: center; }
+ .rmenu span{padding: 10px 100px 10px 50px; display: inline-block;}
+
+ .cont-icon a {width: 64px; height: 64px; display: inline-block; background: url(../img/lol.png); margin: 10px 10px;}
+ 
+
+ 
+ 
  .bigo-i { width: 528px; margin: 0 auto; height: inherit; border: 1px solid rgb(90, 86, 86);text-align: center;background: rgb(105, 103, 103);color: white;font-size: 25;}
+
+
 /* 헤더 */
 
 
@@ -32,8 +63,8 @@
 .header .header-menu a:hover {color: #666;}
 
 .header .header-tit {text-align: center;}  
-.header .header-tit h1 {font-size: 50px; padding: 0px 20px 6px 20px; display: inline-block; color: rgb(0, 0, 0); margin-top: 30px; font-weight: normal; text-transform: uppercase;}
-.header .header-tit a {display: inline-block; background-color: rgba(255,255,255,0.3); font-size: 18px; color:black; padding: 5px 20px 6px 20px; margin-top: px; margin: 10px;}
+.header .header-tit h1 {font-size: 80px; padding: 0px 20px 6px 20px; display: inline-block; color: rgb(0, 0, 0); margin-top: 30px; font-weight: normal; text-transform: uppercase;}
+.header .header-tit a {display: inline-block; background-color: rgba(255,255,255,0.3); font-size: 36px; color:black; padding: 5px 20px 6px 20px; margin: 10px;}
 .header .header-tit a:hover{color: blue;}
 
 
@@ -239,3 +270,5 @@
 }
 
 
+/* 스킬정보 */
+.ski{background: black;}
