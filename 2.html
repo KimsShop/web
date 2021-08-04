@@ -6,7 +6,7 @@
     <meta name="description" content="웹 표준을 준수한 사이트 예제입니다.">
     <meta name="keywords" content="웹스토리보이, 웹표준, 웹접근성, 사이트 만들기">
     <meta name="generator" content="brakets">
-    <title>WEBSTROYBOY SITE</title>
+    <title>와일드리프트 공략-아이템 정보</title>
 
     <!-- CSS STYLE -->
     <link rel="stylesheet" href="css/reset.css">
@@ -14,9 +14,43 @@
  
   <!-- 이미지 팝업을 위해 넣음 2016.10.17 -->
 <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="main.js"></script>
 
 
+<script>
+    this.imagePreview = function(){
+    /* CONFIG */
+    
+    xOffset = 200;
+    yOffset = 1;
+    
+    /* END CONFIG */
+    $("img.preview").hover(function(e){
+    this.t = this.title;
+    this.title = "";
+    var c = (this.t != "") ? "<br/>" + this.t : "";
+    $("body").append("<p id='preview'><img src='"+ $("#pics"+this.id).val() +"' alt='Image preview' width='300px' />"+ c +"</p>");
+    $("#preview")
+    .css("top",(e.pageY - xOffset) + "px")
+    .css("left",(e.pageX + yOffset) + "px")
+    .fadeIn("fast");
+    },
+    function(){
+    this.title = this.t;
+    $("#preview").remove();
+    });
+    $("img.preview").mousemove(function(e){
+    $("#preview")
+    .css("top",(e.pageY - xOffset) + "px")
+    .css("left",(e.pageX + yOffset) + "px");
+    });
+    };
+    
+    
+    // starting the script on page load
+    $(document).ready(function(){
+    imagePreview();
+    });
+</script>
 </head>
 <body>
 
@@ -27,9 +61,7 @@
 
                 <div class="header">
                 <div class="header-menu">
-                        <a href="https://wiss.tistory.com">Desinger</a>
-                        <a href="https://webstoryboy">Publisher</a>
-                        <a href="https://www.youtube.com/channel/UCsvQSv7EeCMHyYb9ENKAJZw">Youtube</a>
+            
                     </div>
 
                     <!-- //헤더 메뉴 -->
